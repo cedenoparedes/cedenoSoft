@@ -1,5 +1,7 @@
- <h3>Add a New Product</h3>
+{% extends 'base.html' %}
+<h3>Add a New Product</h3>
 
+{% block content %}
 {% if error_message %}
     <p><strong>{{ error_message }}</strong></p>
 {% endif %}
@@ -12,3 +14,4 @@
         </div>
     </div>
 </form>
+{% endblock %}
