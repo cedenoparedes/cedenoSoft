@@ -1,6 +1,7 @@
 from django.views import generic
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
+from django.views.generic import  TemplateView
 
 # Create your views here.
 from modelforms.models import Product
@@ -35,3 +36,6 @@ class ProductDelete(DeleteView):
     model = Product
     # the delete button forwards to the url mentioned below.
     success_url = reverse_lazy('modelforms:index')
+
+class index(TemplateView):
+    template_name = 'modelforms/base.html'

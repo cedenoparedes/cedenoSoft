@@ -7,7 +7,8 @@ app_name = 'modelforms'
 urlpatterns = [
 
     # /modelforms/
-    url(r'^$', views.IndexView.as_view(), name='index'),
+     url(r'^$', views.IndexView.as_view(), name='index'),
+
 
     # modelforms/product/entry
     url(r'^product/entry/$', views.ProductEntry.as_view(), name='product-entry'),
